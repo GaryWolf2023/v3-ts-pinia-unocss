@@ -1,0 +1,42 @@
+{
+  "files": [],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    },
+    {
+      "path": "./tsconfig.app.json"
+    }
+  ],
+  "compilerOptions": {
+    "sourceMap": false, // 生成目标文件的sourseMap文件
+    "strict": true, // 启用严格模式
+    "noImplicitAny": false, // 不允许隐式的any类型
+    "module": "esnext", // 指定生成代码的模板标准
+    "target": "es6", // 目标语言的版本
+    "moduleResolution": "node", // 模块解析策略，ts默认使用node的解析策略，即相对的方式导入
+    "removeComments": true, // 移除注释
+    "strictNullChecks": true, // 不允许把null，undefined赋值给其它类型的变量
+    "resolveJsonModule": true, // 允许导入json文件
+    "baseUrl": ".", // 解析非相对模块的基地址，默认是当前目录，防止引入文件报错
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "lib": ["esnext", "dom"], // TS需要引用的库，即声明文件，es5 默认引用dom、es5、scripthost,如需要使用es的高级版本特性，通常都需要配置，如es8的数组新特性需要引入"ES2019.Array",
+    "types": ["vite/client", "node"], // 加载的文件声明包
+    "jsx": "preserve", // jsx解析模板
+    "esModuleInterop": true, // 允许导入而外的ts支持
+    "skipLibCheck": true, // 所有声明文件（*.d.ts）的类型检查，解决打包不报错
+    "suppressImplicitAnyIndexErrors": true, // 允许字符串下标表达式
+    "plugins": [{ "name": "@vuedx/typescript-plugin-vue" }]
+  },
+  "include": [
+    // 指定一个匹配列表（属于自动指定该路径下的所以ts相关文件）
+    "**/*.ts",
+    "**/*.d.ts",
+    "**/*.vue",
+    "src/main.js",
+    "auto-imports.d.ts"
+  ],
+  "exclude": ["node_modules"]
+}
