@@ -20,7 +20,7 @@
     "resolveJsonModule": true, // 允许导入json文件
     "baseUrl": ".", // 解析非相对模块的基地址，默认是当前目录，防止引入文件报错
     "paths": {
-      "@/*": ["./src/*"]
+      "~/*": ["./src/*"]
     },
     "lib": ["esnext", "dom"], // TS需要引用的库，即声明文件，es5 默认引用dom、es5、scripthost,如需要使用es的高级版本特性，通常都需要配置，如es8的数组新特性需要引入"ES2019.Array",
     "types": ["vite/client", "node"], // 加载的文件声明包

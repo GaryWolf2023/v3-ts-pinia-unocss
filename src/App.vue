@@ -12,5 +12,3 @@ const locale = ref(zhCn)
     <RouterView></RouterView>
   </el-config-provider>
 </template>
-
-<style lang="scss" scoped></style>

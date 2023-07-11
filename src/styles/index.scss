@@ -1,5 +1,5 @@
 @import './base.scss';
-@import "./reset.scss";
+// @import "./reset.scss";
 
 #app {
   width: 100vw;
@@ -16,6 +16,9 @@ a,
   -moz-transition: 0.4s;
   -ms-transition: 0.4s;
   -o-transition: 0.4s;
+}
+html.dark {
+  background: var(--dark-bg);
 }
 @media (hover: hover) {
   a:hover {

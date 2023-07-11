@@ -2,8 +2,11 @@
   <div class="sidebar-box" :style="style">
     <div class="sidebar-top">
       <img src="https://avatars.githubusercontent.com/u/25190530?v=4" alt="avatar" />
+      <span class="app-title">lby</span>
     </div>
-    <div class="sidebar-menu">1</div>
+    <div class="sidebar-menu">
+      <menu-item></menu-item>
+    </div>
   </div>
 </template>
 
@@ -26,6 +29,12 @@ const style = reactive({
       width: 46px;
       height: 46px;
       margin-left: 4px;
+    }
+    .app-title {
+      margin-left: 10px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #606266;
     }
   }
   .sidebar-menu {

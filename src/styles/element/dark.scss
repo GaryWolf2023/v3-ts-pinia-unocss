@@ -4,6 +4,15 @@ $--colors: (
   "primary": (
     "base": #589ef8,
   ),
+  "success": (
+    "base": #57c84d,
+  ),
+  "warning": (
+    "base": #e6a23c,
+  ),
+  "danger": (
+    "base": #f56c6c,
+  ),
 );
 
 @forward "element-plus/theme-chalk/src/dark/var.scss" with (

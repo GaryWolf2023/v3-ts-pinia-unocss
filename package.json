@@ -17,6 +17,7 @@
     "@tmagic/editor": "^1.2.15",
     "@tmagic/element-plus-adapter": "^1.2.15",
     "@tmagic/form": "^1.2.15",
+    "@vueuse/core": "^10.2.1",
     "element-plus": "^2.3.7",
     "monaco-editor": "^0.39.0",
     "pinia": "^2.1.3",

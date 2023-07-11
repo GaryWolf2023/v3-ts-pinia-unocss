@@ -3,11 +3,11 @@ import { createPinia } from 'pinia'
 import App from './App.vue'
 import router from './router'
 
-import '@/styles/main.scss'
+import '~/styles/index.scss'
 
 // import 'element-plus/theme-chalk/dark/css-vars.css'
 // import './styles/dark/css-vars.scss'
-import './styles/element/index.scss'
+// import './styles/element/index.scss'
 
 import SvgIcon from './components/SvgIcon/index.vue'
 import 'virtual:svg-icons-register'
