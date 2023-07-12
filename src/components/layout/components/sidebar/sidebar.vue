@@ -19,9 +19,9 @@ const style = reactive({
 <style lang="scss" scoped>
 .sidebar-box {
   height: 100%;
-  border-right: 1px solid #ebeef5;
+  border-right: 1px solid #999ba0;
   .sidebar-top {
-    height: 51px;
+    height: 50px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -38,9 +38,10 @@ const style = reactive({
     }
   }
   .sidebar-menu {
-    height: calc(100% - 51px);
+    height: calc(100% - 60px);
     width: 100%;
     overflow-x: hidden;
+    padding: 5px 0;
   }
 }
 </style>

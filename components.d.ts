@@ -16,6 +16,7 @@ declare module 'vue' {
     ElIcon: typeof import('element-plus/es')['ElIcon']
     ElInput: typeof import('element-plus/es')['ElInput']
     Header: typeof import('./src/components/layout/components/header/header.vue')['default']
+    IEpClose: typeof import('~icons/ep/close')['default']
     IEpEdit: typeof import('~icons/ep/edit')['default']
     IEpExpand: typeof import('~icons/ep/expand')['default']
     IEpFold: typeof import('~icons/ep/fold')['default']

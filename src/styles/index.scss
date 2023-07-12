@@ -1,29 +1,27 @@
-@import './base.scss';
-// @import "./reset.scss";
+:root {
+  --primary-color: #316c72;
+  --dark-bg: #18181c;
+  --dark-color: #fff;
+}
 
+html {
+  font-size: 4px; // * 方便unocss计算：1单位 = 0.25rem = 1px
+  color: #000;
+}
+
+body {
+  font-size: 16px;
+}
+
+html,
+body,
 #app {
-  width: 100vw;
-  height: 100vh;
-  color: azure;
-  font-size: 20px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  -webkit-transition: 0.4s;
-  -moz-transition: 0.4s;
-  -ms-transition: 0.4s;
-  -o-transition: 0.4s;
-}
+
 html.dark {
   background: var(--dark-bg);
-}
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
-}
-@media (min-width: 1024px) {
+  color: var(--dark-color);
 }
